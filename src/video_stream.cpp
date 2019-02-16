@@ -113,6 +113,7 @@ void do_capture(ros::NodeHandle &nh) {
                 framesQueue.push(frame.clone());
             }
         }
+       frame.release();
     }
 }
 
